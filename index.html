@@ -114,7 +114,13 @@
             class="collapse navbar-collapse bg-transparent"
             id="navbarCollapse"
           >
-            <div class="navbar-nav ms-auto mx-xl-auto p-0">
+            <div
+              class="navbar-nav ms-auto mx-xl-auto p-0"
+              style="
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+              "
+            >
               <a
                 href="index.html"
                 class="nav-item nav-link active text-secondary"
@@ -141,9 +147,15 @@
                 </div>
               </a>
             </div>
-            <div class="d-flex flex-column pe-4 border-end">
+            <div
+              class="d-flex flex-column pe-4 border-end"
+              style="
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+              "
+            >
               <span class="text-white-50">Have any questions?</span>
-              <span class="text-secondary">Call: +91 9871008035</span>
+              <span class="text-secondary">Call: +91 8006657895</span>
             </div>
             <div
               class="d-flex align-items-center justify-content-center ms-4"
@@ -179,11 +191,14 @@
             <img src="img/carousel-1.jpg" class="img-fluid" alt="First slide" />
             <div class="carousel-caption">
               <div class="container carousel-content">
-                <h6 class="text-secondary h4 animated fadeInUp">
+                <h6
+                  class="text-secondary h4 animated fadeInUp"
+                  style="font-family: sans-serif"
+                >
                   Transforming Data Into Decisions
                 </h6>
                 <h1 class="text-white display-1 mb-4 animated fadeInRight">
-                  An Innovative IT Solutions Agency
+                  An Innovative IT Solutions Company
                 </h1>
                 <p
                   class="mb-4 text-white fs-5 animated fadeInDown"
@@ -221,7 +236,10 @@
             />
             <div class="carousel-caption">
               <div class="container carousel-content">
-                <h6 class="text-secondary h4 animated fadeInUp">
+                <h6
+                  class="text-secondary h4 animated fadeInUp"
+                  style="font-family: sans-serif"
+                >
                   Transforming Data Into Decisions
                 </h6>
                 <h1 class="text-white display-1 mb-4 animated fadeInLeft">
@@ -345,7 +363,8 @@
             data-wow-delay=".5s"
           >
             <h5 class="text-primary">About Us</h5>
-            <h1 class="mb-4">
+            <!-- hidden -->
+            <h1 class="mb-4 d-none">
               About HighTech Agency And It's Innovative IT Solutions
             </h1>
             <p>
@@ -393,7 +412,7 @@
                     results.
                   </p>
                   <a
-                    onclick="handleReadShowClick(this)"
+                    onclick="handleReadShowClick(this,'ser_content')"
                     class="btn btn-secondary text-white px-5 py-3 rounded-pill"
                     >Read More</a
                   >
@@ -419,7 +438,7 @@
                     including Micro marketing, Performance Marketing
                   </p>
                   <a
-                    onclick="handleReadShowClick(this)"
+                    onclick="handleReadShowClick(this,'ser_content')"
                     class="btn btn-secondary text-white px-5 py-3 rounded-pill"
                     >Read More</a
                   >
@@ -449,7 +468,7 @@
                     other IT resources.
                   </p>
                   <a
-                    onclick="handleReadShowClick(this)"
+                    onclick="handleReadShowClick(this,'ser_content')"
                     class="btn btn-secondary text-white px-5 py-3 rounded-pill"
                     >Read More</a
                   >
@@ -473,7 +492,7 @@
                     experience like no other.
                   </p>
                   <a
-                    onclick="handleReadShowClick(this)"
+                    onclick="handleReadShowClick(this,'ser_content')"
                     class="btn btn-secondary text-white px-5 py-3 rounded-pill"
                     >Read More</a
                   >
@@ -494,10 +513,10 @@
                   <h4 class="mb-3 pt-3">Voice Broadcasting</h4>
                   <p class="mb-4 ser_content">
                     Broadcast information to a large audience in no time with
-                    our secure and reliable voice broadcasting service
+                    our secure and reliable voice broadcasting service
                   </p>
                   <a
-                    onclick="handleReadShowClick(this)"
+                    onclick="handleReadShowClick(this,'ser_content')"
                     class="btn btn-secondary text-white px-5 py-3 rounded-pill"
                     >Read More</a
                   >
@@ -517,7 +536,7 @@
                     seconds with SMS service.
                   </p>
                   <a
-                    onclick="handleReadShowClick(this)"
+                    onclick="handleReadShowClick(this,'ser_content')"
                     class="btn btn-secondary text-white px-5 py-3 rounded-pill"
                     >Read More</a
                   >
@@ -649,8 +668,9 @@
     </div>
     <!-- Project End -->
     <!-- values Start -->
-    <div class="w-100">
-      <img src="img/valuesImg.jpg" class="w-100" alt="" />
+    <!-- Hidden  -->
+    <div class="w-100 d-none justify-content-center">
+      <img src="img/valuesImg.jpg" class="w-75" alt="" />
     </div>
     <!-- values end -->
     <!-- Blog Start -->
@@ -709,10 +729,7 @@
                 </div>
               </div>
 
-              <div
-                class="blog-content text-center position-relative px-3"
-                style="margin-top: -25px"
-              >
+              <div class="blog-content text-center position-relative px-3">
                 <!-- <img
                   src="img/admin.jpg"
                   class="img-fluid rounded-circle border border-4 border-white mb-3"
@@ -721,11 +738,17 @@
                 
                 <h5 class="">By Daniel Martin</h5>
                 <span class="text-secondary">24 March 2023</span> -->
-                <p class="py-2 mt-4">
-                  Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut
-                  interdum. Aliquam dolor eget urna ultricies tincidunt libero
-                  sit amet
+                <p class="mt-4 blog_content">
+                  Web design focuses on the visual and interactive aspects of
+                  websites. It's about creating aesthetically pleasing and
+                  user-friendly interfaces that provide seamless navigation and
+                  engaging experiences.
                 </p>
+                <a
+                  onclick="handleReadShowClick(this,'blog_content')"
+                  class="btn btn-secondary text-white mb-4 px-5 py-3 rounded-pill"
+                  >Read More</a
+                >
               </div>
               <!-- hidden -->
               <div
@@ -789,10 +812,7 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="blog-content text-center position-relative px-3"
-                style="margin-top: -25px"
-              >
+              <div class="blog-content text-center position-relative px-3">
                 <!-- <img
                   src="img/admin.jpg"
                   class="img-fluid rounded-circle border border-4 border-white mb-3"
@@ -800,11 +820,17 @@
                 />
                 <h5 class="">By Daniel Martin</h5>
                 <span class="text-secondary">23 April 2023</span> -->
-                <p class="py-2 mt-4">
-                  Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut
-                  interdum. Aliquam dolor eget urna ultricies tincidunt libero
-                  sit amet
+                <p class="mt-4 blog_content">
+                  Web development is the process of building, creating, and
+                  maintaining websites or web applications. It involves coding,
+                  programming, and using various tools to ensure a website is
+                  functional, user-friendly, and scalable.
                 </p>
+                <a
+                  onclick="handleReadShowClick(this,'blog_content')"
+                  class="btn btn-secondary text-white px-5 py-3 mb-4 rounded-pill"
+                  >Read More</a
+                >
               </div>
               <!-- hidden -->
               <div
@@ -835,7 +861,7 @@
               <span
                 class="position-absolute px-4 py-3 bg-primary text-white rounded"
                 style="top: -28px; right: 20px"
-                >Mobile App</span
+                >Campaign manager</span
               >
               <!-- hidden -->
               <div
@@ -869,10 +895,7 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="blog-content text-center position-relative px-3"
-                style="margin-top: -25px"
-              >
+              <div class="blog-content text-center position-relative px-3">
                 <!-- <img
                   src="img/admin.jpg"
                   class="img-fluid rounded-circle border border-4 border-white mb-3"
@@ -880,11 +903,17 @@
                 />
                 <h5 class="">By Daniel Martin</h5>
                 <span class="text-secondary">30 jan 2023</span> -->
-                <p class="py-2 mt-4">
-                  Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut
-                  interdum. Aliquam dolor eget urna ultricies tincidunt libero
-                  sit amet
+                <p class="mt-4 blog_content">
+                  The campaign manager tool is a powerful solution for
+                  enterprise clients looking to enhance their marketing efforts.
+                  With its robust features and benefits, it can help streamline
+                  processes, improve targeting, and drive better results.
                 </p>
+                <a
+                  onclick="handleReadShowClick(this,'blog_content')"
+                  class="btn btn-secondary text-white px-5 py-3 mb-4 rounded-pill"
+                  >Read More</a
+                >
               </div>
               <!-- hidden -->
               <div
@@ -1196,8 +1225,8 @@
                     href="https://maps.app.goo.gl/2igReRSCHfFBwTZ29"
                     target="_blank"
                     class="h5 text-center text-md-start"
-                    >501, 5th Floor, Plot No.21, Tech Zone-IV, Greater Noida
-                    (W), Uttar Pradesh, India 201009</a
+                    >501, 5th Floor, Artha Mart, Plot No.21, Tech Zone-IV,
+                    Greater Noida (W), Uttar Pradesh, India 201009</a
                   >
                 </div>
               </div>
@@ -1396,9 +1425,9 @@
             <a href="#" class="h3 text-secondary">Contact Us</a>
             <div class="text-white mt-4 d-flex flex-column contact-link">
               <a href="#" class="pb-3 text-light border-bottom border-primary"
-                ><i class="fas fa-map-marker-alt text-secondary me-2"></i>501,
-                5th Floor, Plot No.21, Tech Zone-IV, Greater Noida (W), Uttar
-                Pradesh, India 201009</a
+                ><i class="fas fa-map-marker-alt text-secondary me-2"></i> 501,
+                5th Floor, Artha Mart, Plot No.21, Tech Zone-IV, Greater Noida
+                (W), Uttar Pradesh, India 201009</a
               >
               <a href="#" class="py-3 text-light border-bottom border-primary"
                 ><i class="fas fa-phone-alt text-secondary me-2"></i> +91

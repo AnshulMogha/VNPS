@@ -747,7 +747,15 @@
   text-overflow: ellipsis;
   white-space: normal;
 }
-.ser_content.expanded {
+.blog_content {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Show 3 lines */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.expanded {
   -webkit-line-clamp: unset; /* Remove line clamping */
   line-clamp: 3;
   overflow: visible;

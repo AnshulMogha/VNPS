@@ -109,13 +109,27 @@ document.getElementById("copyrightYear").innerHTML = d.getFullYear();
 
 // Read More Functionality
 
-function handleReadShowClick(button) {
-  const content = button.previousElementSibling;
+function handleReadShowClick(button, className) {
+  const content = button.previousElementSibling; // Select the content element before the button
   if (content.classList.contains("expanded")) {
+    // If already expanded, collapse it
     content.classList.remove("expanded");
     button.textContent = "Read More";
   } else {
+    // Collapse all other cards and expand the current one
+    hideAllCards(className);
     content.classList.add("expanded");
     button.textContent = "Show Less";
   }
+}
+
+function hideAllCards(className) {
+  const cards = document.querySelectorAll(`.${className}`); // Select all elements with the given class name
+  cards.forEach((content) => {
+    const button = content.nextElementSibling; // Find the associated button
+    content.classList.remove("expanded"); // Remove 'expanded' class from the content
+    if (button) {
+      button.textContent = "Read More"; // Reset the button text
+    }
+  });
 }
